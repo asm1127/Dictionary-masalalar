@@ -1,0 +1,2 @@
+# Dictionary-masalalar
+Masalalar yechimi
