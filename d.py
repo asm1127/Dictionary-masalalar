@@ -33,6 +33,7 @@
 #
 # result10 = len(student_grades) == 0
 # print("10-vazifa natijasi:", result10)
+from urllib.request import parse_http_list
 
 # #2
 # fruits = {"olma": 5000, "banan": 12000, "uzum": 8000}
@@ -362,6 +363,177 @@
 # result10 = len(destinations) == 0
 # print("10. Natija:", result10)
 
-#11
-phones = {"iPhone 15": 12000000, "Samsung S24": 9000000, "Xiaomi 14": 6000000}
+# #11
+# phones = {"iPhone 15": 12000000, "Samsung S24": 9000000, "Xiaomi 14": 6000000}
+#
+# phones["Redmi Note 13"] = 4500000
+# result1 = phones
+# print("1. Natija:", result1)
+#
+# phones["Samsung S24"] = 8500000
+# result2 = phones
+# print("2. Natija:", result2)
+#
+# del phones["Xiaomi 14"]
+# result3 = phones
+# print("3. Natija:", result3)
+#
+# result4 = sum(phones.values())
+# print("4. Natija:", result4)
+#
+# result5 = sum(phones.values()) / len(phones)
+# print("5. Natija:", result5)
+#
+# result6 = max(phones.keys(), key=phones.get)
+# print("6. Natija:", result6)
+#
+# result7 = min(phones.keys(), key=phones.get)
+# print("7. Natija:", result7)
+#
+# result8 = sorted(phones.keys())
+# print("8. Natija:", result8)
+#
+# result9 = phones.get("iPhone 15")
+# print("9. Natija:", result9)
+#
+# result10 = sorted(phones.values(), reverse=True)
+# print("10. Natija:", result10)
 
+# #12
+# employees = {"Anvar": 8000000, "Malika": 12000000, "Javohir": 10000000}
+#
+# employees["Dilnoza"] = 9000000
+# result1 = employees
+# print("1. Natija:", result1)
+#
+# employees["Anvar"] = 8500000
+# result2 = employees
+# print("2. Natija:", result2)
+#
+# del employees["Javohir"]
+# result3 = employees
+# print("3. Natija:", result3)
+#
+# result4 = sum(employees.values())
+# print("4. Natija:", result4)
+#
+# result5 = sum(employees.values()) / len(employees)
+# print("5. Natija:", result5)
+#
+# result6 = max(employees.keys(), key=employees.get)
+# print("6. Natija:", result6)
+#
+# result7 = min(employees.keys(), key=employees.get)
+# print("7. Natija:", result7)
+#
+# result8 = sorted(employees.keys())
+# print("8. Natija:", result8)
+#
+# result9 = sum(1 for v in employees.values() if v > 10000000)
+# print("9. Natija:", result9)
+#
+# result10 = employees.copy()
+# print("10. Natija:", result10)
+
+
+# #13
+# schedule = {"Matematika": 5, "Ona tili": 4, "Tarix": 3, "Fizika": 4}
+#
+# schedule["Ingliz tili"] = 3
+# result1 = schedule
+# print("1. Natija:", result1)
+#
+# schedule["Matematika"] = 6
+# result2 = schedule
+# print("2. Natija:", result2)
+#
+# del schedule["Tarix"]
+# result3 = schedule
+# print("3. Natija:", result3)
+#
+# result4 = sum(schedule.values())
+# print("4. Natija:", result4)
+#
+# result5 = sum(schedule.values()) / len(schedule)
+# print("5. Natija:", result5)
+#
+# result6 = max(schedule.keys(), key=schedule.get)
+# print("6. Natija:", result6)
+#
+# result7 = min(schedule.keys(), key=schedule.get)
+# print("7. Natija:", result7)
+#
+# result8 = list(schedule.keys())
+# print("8. Natija:", result8)
+#
+# result9 = len(schedule)
+# print("9. Natija:", result9)
+#
+# result10 = sorted(schedule.values())
+# print("10. Natija:", result10)
+
+# #14
+# car_sales = {"Toyota": 150000, "Chevrolet": 80000, "BMW": 45000, "Mercedes": 50000}
+#
+# car_sales["Tesla"] = 60000
+# result1 = car_sales
+# print("1. Natija:", result1)
+#
+# car_sales["Chevrolet"] = 90000
+# result2 = car_sales
+# print("2. Natija:", result2)
+#
+# del car_sales["BMW"]
+# result3 = car_sales
+# print("3. Natija:", result3)
+#
+# result4 = sum(car_sales.values())
+# print("4. Natija:", result4)
+#
+# result5 = max(car_sales.keys(), key=car_sales.get)
+# print("5. Natija:", result5)
+#
+# result6 = min(car_sales.keys(), key=car_sales.get)
+# print("6. Natija:", result6)
+#
+# result7 = list(car_sales.keys())
+# print("7. Natija:", result7)
+#
+# result9 = sorted(car_sales.values(), reverse=True)
+# print("9. Natija:", result9)
+#
+# result10 = car_sales.get("Tayota")
+# print("10. Natija:", result10)
+
+# #15
+# movies = {"Interstellar": 8.7, "Inception": 8.8, "Tenet": 7.3, "Dunkirk": 7.8}
+#
+# movies["Oppenheimer"] = 8.5
+# result1 = movies
+# print("1. Natija:", result1)
+#
+# movies["Tenet"] = 7.5
+# result2 = movies
+# print("2. Natija:", result2)
+#
+# del movies["Tenet"]
+# result3 = movies
+# print("3. Natija:", result3)
+#
+# result4 = sum(movies.values()) / len(movies)
+# print("4. Natija:", result4)
+#
+# result5 = max(movies.keys(), key=movies.get)
+# print("5. Natija:", result5)
+#
+# result6 = min(movies.keys(), key=movies.get)
+# print("6. Natija:", result6)
+#
+# result7 = sorted(movies.keys())
+# print("7. Natija:", result7)
+#
+# result9 = sorted(movies.values(), reverse=True)
+# print("9. Natija:", result9)
+#
+# result10 = movies.get("Inception")
+# print("10. Natija:", result10)
